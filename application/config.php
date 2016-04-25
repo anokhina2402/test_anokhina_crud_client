@@ -12,6 +12,6 @@ define('VERSION', '1.0.0');
 
 /** post url **/
 
-define('POST_URL', "http://testanokhinacrud/employees");
+define('POST_URL', "http://testanokhinacrudserver/employees");
 
 ?>

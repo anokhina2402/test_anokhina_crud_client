@@ -26,14 +26,4 @@ $arr_locale= array (
 		"add_employee" => "Создать сотрудника",
 		"no_employee" => "Нет ни одного сотрудника",
 
-		"accept" => "Принять",
-		"reject" => "Отклонить",
-		"edit_comment" => "Изменить отзыв",
-		"sort" => "Сортировка",
-		"sort_name" => "По имени автора",
-		"sort_email" => "По e-mail",
-		"sort_date" => "По дате добавления",
-		"edited_admin" => "Изменен администратором",
-
-
 );

@@ -1,6 +1,6 @@
 <?php
 
-/** class of add comment controller **/
+/** class of employee controller **/
 
 class Controller_Add extends Controller
 {
@@ -11,16 +11,19 @@ class Controller_Add extends Controller
 	}
 
 	/**
-	 * method for check admin
+	 * method for view add employees
 	 */
 
 	function action_index()
 	{
 
 		$data = $this->postCURL('/create', '', 'GET');
-		//print_r($data);
 		$this->view->generate('add_view.php', 'template_view.php', $data);
 	}
+
+	/**
+	 * method for save employee
+	 */
 
 	function action_save()
 	{
@@ -37,9 +40,5 @@ class Controller_Add extends Controller
 		else
 			header('Location:/');
 	}
-
-
-
-
 
 	}

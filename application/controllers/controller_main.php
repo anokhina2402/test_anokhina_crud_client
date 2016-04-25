@@ -18,7 +18,6 @@ class Controller_Main extends Controller
 	{
 		if (isset($_POST['button']) && $_POST['button']) {
 
-
 			/** click button **/
 			switch ($_POST['button']) {
 				case 'edit':
@@ -40,11 +39,7 @@ class Controller_Main extends Controller
 		}
 		$data = array('data' => $this->postCURL('', '', 'GET'));
 		$data['data'] = json_decode($data['data'], true);
-		//print_r($data);
 		$this->view->generate('main_view.php', 'template_view.php', $data['data']);
 	}
-
-
-
 
 }
